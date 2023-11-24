@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <title>Jedd.W CS50</title>
+  <!-- bootstrap Scripts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      let dark_mode = document.querySelector("#dark_mode_button");
+      let calm_mode = document.querySelector("#calm_mode_button");
+      let photo_credit = document.querySelector("#photo-credit");
+
+      // Calm mode
+      calm_mode.addEventListener('click', function() {
+        console.log("calm");
+        var element_2 = document.body;
+        element_2.classList.toggle("calm-mod");
+        photo_credit.innerHTML = 'Photo by <a href="https://unsplash.com/@sylwiabartyzel">Sylwia Bartyzel</a>'
+      })
+
+      // Dark mode
+      dark_mode.addEventListener('click', () => {
+        var element_1 = document.body;
+        element_1.classList.toggle("dark-mode")
+      });
+    });
+  </script>
+
+  <!-- CSS Stylesheets -->
+  <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- Collapse Nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+      <!-- CS50 brand -->
+      <h3 class="cs50-brand">CS50</h3>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#homepagenavbar" aria-controls="homepagenavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar items -->
+      <div class="navbar-collapse collapse" id="homepagenavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="link-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="link-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="link-item">
+            <a class="nav-link" href="/works.html">Works</a>
+          </li>
+          <li class="link-item">
+            <a class="nav-link" href="/blog.html">Blog</a>
+          </li>
+          <li class="link-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+
+
+
+    <!-- Main Content -->
+    <div>
+      <div class="col-lg-6">
+        <!-- The Title -->
+        <h1 class="title">Hi! I am Jedd Wong This is Problem Set 8 "Homepage"</h1>
+
+        <!-- Join CS50 button -->
+        <a class="btn btn-dark btn-lg download-button" href="https://cs50.harvard.edu/x/2022/">Join CS50</a>
+      </div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="col-lg-6 header">
+        <!-- Collapse Nav bar -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button type="button" class="btn btn-secondary btn-sm mode-button" id="dark_mode_button">Drak mode</button>
+          <button type="button" class="btn btn-secondary btn-sm mode-button" id="calm_mode_button">Calm mode</button>
+        </nav>
+      </div>
+    </nav>
+
+
+    <!-- Footer -->
+    <div>
+      <footer id="footer">
+        <p id="photo-credit"></p>
+        <p>© Copyright 2022 Jedd Wong</p>
+      </footer>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

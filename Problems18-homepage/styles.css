@@ -1,0 +1,115 @@
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 800;
+  }
+
+/* .title {
+    color: #3C403D;
+} */
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #DADED4;
+    color: #3C403D;
+  }
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: #3C403D;
+}
+
+a:hover {
+  text-decoration:none;
+  color: #DADED4;
+  cursor:pointer;
+}
+
+
+.container-fluid {
+  padding: 3% 14% 7%;
+}
+
+
+.cs50-brand {
+    /* color: #3C403D; */
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-item {
+    padding: 0px 18px
+    color: #3C403D;
+}
+
+
+/* Nav bar */
+.navbar {
+    padding-buttom: 4.5rem
+    background-color: #3C403D;
+  }
+
+
+.nav-item {
+    padding: 0px 18px;
+  }
+
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    /* color: #3C403D; */
+  }
+
+
+.navbar {
+    padding-buttom: 0  0 4.5rem
+  }
+
+
+
+/* Button */
+.button-link{
+  text-decoration: none;
+  color: #DADED4;
+}
+
+.mode-button{
+  margin: 5% 3% 5% 0;
+}
+
+
+
+/* Footer */
+#footer {
+  padding: 7% 15%;
+  text-align: center;
+}
+
+
+
+/* JS Themes changing */
+.dark-mode {
+  background-image: none;
+  background-color: #3C403D;
+  color: #DADED4;
+}
+
+.calm-mod {
+  background-image: url(calm_mode.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  color: #3C403D;
+}
+
+.reset-all-css {
+  all:unset;
+}

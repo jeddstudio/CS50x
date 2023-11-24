@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: The best case scenario outperforms the worst case scenario by a wide margin(Ω(n) vs O(n²)), The most time spent in the random case
+
+sort2 uses: Merge Sort
+
+How do you know?: Performance is similar and best in all 3 scenarios(all is n log n)
+
+sort3 uses: Selection Sort
+
+How do you know?: Best case scenario takes the same amount of time as the worst case scenario(Ω(n²) vs O(n²)), Faster than sort 1 in the case of random山

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Log In
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="get">
+        <div class="mb-3">
+            <p>A share of {{ jinja_stock_name }} {{ jinja_display_stock_symbol }} costs {{ jinja_stock_price | usd }}</p>
+        </div>
+    </form>
+{% endblock %}
