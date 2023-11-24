@@ -4,4 +4,4 @@
 - Start Date: [[2022-04-11]]
 - Finish Date: [[2022-11-25]]
 
-![CS50x_letter.png]
+![[CS50x_letter.png]]
